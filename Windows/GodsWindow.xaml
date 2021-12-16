@@ -1,0 +1,82 @@
+﻿<Window x:Class="EgyptianDictionary_SQLite.Windows.GodsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EgyptianDictionary_SQLite.Windows"
+        mc:Ignorable="d"
+        Title="Редактирование божества" Height="600" Width="800"
+         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI Historic"
+        FontSize="16"
+        Background="#fff2b2">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="8" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="8" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition  Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Имя" />
+        <TextBlock Text="Код Гардинера" Grid.Row="1" />
+        <TextBlock Text="Иероглифическое написание" Grid.Row="2" />
+        <TextBlock Text="Транслитерация" Grid.Row="3" />
+        <TextBlock Text="Категория" Grid.Row="4" />
+        <TextBlock Text="Функции" Grid.Row="5" />
+        <TextBlock Text="Описание" Grid.Row="6" />
+
+        <TextBox Text="{Binding Name}" Grid.Column="1" />
+        <TextBox Text="{Binding GardinerCode}" Grid.Column="1" Grid.Row="1" />
+        <TextBox Text="{Binding Hieroglyphic}" 
+                 FontSize="32"
+                 Grid.Column="1" Grid.Row="2" />
+        <TextBox Text="{Binding Transliteration}" Grid.Column="1" Grid.Row="3" />
+        <TextBox Text="{Binding Type}" Grid.Column="1" Grid.Row="4" />
+        <TextBox Text="{Binding Description}"
+                 Height="100"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 Grid.Column="1" Grid.Row="5" />
+        <TextBox Text="{Binding View}" 
+                 Height="100"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 Grid.Column="1" Grid.Row="6" />
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="7" Grid.ColumnSpan="2">
+            <Button
+                Background="#28666e"
+                Foreground="white"
+                BorderBrush="white"
+                Height="35"
+                Width="100"
+               Margin="25,0,25,0"
+                IsDefault="True" Click="Accept_Click" MinWidth="60">OK</Button>
+            <Button
+                Background="#28666e"
+                Foreground="white"
+                BorderBrush="white"
+                Height="35" 
+                Width="100"
+               Margin="25,0,25,0"
+                IsCancel="True" MinWidth="60">Отмена</Button>
+        </StackPanel>
+    </Grid>
+</Window>

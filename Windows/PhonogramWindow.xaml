@@ -1,0 +1,63 @@
+﻿<Window x:Class="EgyptianDictionary_SQLite.Windows.PhonogramWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EgyptianDictionary_SQLite.Windows"
+        mc:Ignorable="d"
+        Title="Редактирование фонограммы" Height="500" Width="700"
+         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI Historic"
+        FontSize="16"
+        Background="#fff2b2">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="8" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="8" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Иероглиф" />
+        <TextBlock Text="Код Гардинера" Grid.Row="1" />
+        <TextBlock Text="Транслитерация" Grid.Row="2" />
+        <TextBlock Text="Manuel de Cotage" Grid.Row="3" />
+
+        <TextBox Text="{Binding Glyph}"  FontSize="32" Grid.Column="1" />
+        <TextBox Text="{Binding GardinerCode}" Grid.Column="1" Grid.Row="1" />
+        <TextBox Text="{Binding Transliteration}" Grid.Column="1" Grid.Row="2" />
+        <TextBox Text="{Binding ManuelCotage}" Grid.Column="1" Grid.Row="3" />
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2">
+            <Button
+                Background="#28666e"
+                Foreground="white"
+                BorderBrush="white"
+                Height="35"
+                Width="100"
+               Margin="25,0,25,0"
+                IsDefault="True" Click="Accept_Click" MinWidth="60">OK</Button>
+            <Button
+                Background="#28666e"
+                Foreground="white"
+                BorderBrush="white"
+                Height="35" 
+                Width="100"
+               Margin="25,0,25,0"
+                IsCancel="True" MinWidth="60">Отмена</Button>
+        </StackPanel>
+    </Grid>
+</Window>
