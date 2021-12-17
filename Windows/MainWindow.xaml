@@ -239,14 +239,14 @@
                                 <Image Source="/Assets/img_logout.png"
                                        Margin="7,0,0,0"/>
 
-                                <TextBlock Text="Выйти"
+                                <TextBlock Text="Авторизация"
                                            Margin="25,0,0,0"
                                            Style="{StaticResource font_style}"/>
                             </StackPanel>
                             <!--// Tooltip //-->
                             <ListViewItem.ToolTip>
                                 <ToolTip x:Name="tt_exit"
-                                         Content="Выйти"
+                                         Content="Авторизация"
                                          Style="{StaticResource tt_style}"/>
                             </ListViewItem.ToolTip>
                         </ListViewItem>

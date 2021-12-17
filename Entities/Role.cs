@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EgyptianDictionary.Entities
+namespace EgyptianDictionary_SQLite
 {
     using System;
     using System.Collections.Generic;

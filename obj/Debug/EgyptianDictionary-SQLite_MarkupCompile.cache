@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\anya7\Documents\GitHub\Ancient-Egyptian-Dictionary-WPF-SQLite\App.xaml
-9917115530
+14-1481461972
 
-25-102399793
+29-1054517659
 19750470550
-Windows\DictionaryWindow.xaml;Windows\GodsWindow.xaml;Windows\MainWindow.xaml;Pages\DictionaryPage.xaml;Pages\GodsPage.xaml;Pages\PharaonPage.xaml;Pages\AlphabetPage.xaml;Windows\PharaohWindow.xaml;Windows\PhonogramWindow.xaml;
+Pages\ProfileClientPage.xaml;Pages\ProfileTranslatorPage.xaml;Windows\DictionaryWindow.xaml;Windows\GodsWindow.xaml;Windows\LoginWindow.xaml;Windows\MainWindow.xaml;Pages\DictionaryPage.xaml;Pages\GodsPage.xaml;Pages\PharaonPage.xaml;Pages\AlphabetPage.xaml;Windows\PharaohWindow.xaml;Windows\PhonogramWindow.xaml;Windows\RegistrationWindow.xaml;Windows\TranslationWindow.xaml;
 
 False
 

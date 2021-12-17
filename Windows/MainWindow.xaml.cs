@@ -1,7 +1,10 @@
-﻿using System;
+﻿using EgyptianDictionary_SQLite.Windows;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Data.Entity;
+using System.Linq;
 
 namespace EgyptianDictionary_SQLite
 {
@@ -10,9 +13,46 @@ namespace EgyptianDictionary_SQLite
     /// </summary>
     public partial class MainWindow : Window
     {
+        readonly ApplicationContext db;
         public MainWindow()
         {
             InitializeComponent();
+            db = new ApplicationContext();
+            db.Users.Load();
+            db.Clients.Load();
+            db.Translators.Load();
+            int clientCount = 0;
+            if (App.CurrentUser != null)
+            {
+                for (int c = 0; c < db.Clients.ToList().Count; c++)
+                {
+                    if (db.Clients.ToList()[c].UserId == App.CurrentUser.Id)
+                    {
+                        clientCount = c;
+                    }
+
+                }
+                int translatorCount = 0;
+                for (int t = 0; t < db.Translators.ToList().Count; t++)
+                {
+                    if (db.Translators.ToList()[t].UserId == App.CurrentUser.Id)
+                    {
+                        translatorCount = t;
+                    }
+
+                }
+                if (App.CurrentUser.RoleId == 1)
+                {
+                    if (db.Clients.ToList()[clientCount].Avatar != "")
+                        TBPhoto.Text = db.Clients.ToList()[clientCount].Avatar;
+                }
+                else if (App.CurrentUser.RoleId == 2)
+                {
+                    if (db.Translators.ToList()[translatorCount].Avatar != "")
+                        TBPhoto.Text = db.Translators.ToList()[translatorCount].Avatar;
+                }
+            }
+           
         }
 
         private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
@@ -76,11 +116,21 @@ namespace EgyptianDictionary_SQLite
         }
         private void LV_Profile_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            if (App.CurrentUser == null)
+            {
+                MessageBox.Show("Для входа в личный кабинет вам нужно авторизоваться!");
+                return;
+            }
+            else
+            {
+                if (App.CurrentUser.RoleId == 1) Frame.Source = new Uri("/Pages/ProfileClientPage.xaml", UriKind.Relative);
+                else if (App.CurrentUser.RoleId == 2) Frame.Source = new Uri("/Pages/ProfileTranslatorPage.xaml", UriKind.Relative);
+            }
         }
         private void LV_Exit_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            new LoginWindow().Show();
+            this.Close();
         }
         private void BMinimize_Click(object sender, RoutedEventArgs e)
         {

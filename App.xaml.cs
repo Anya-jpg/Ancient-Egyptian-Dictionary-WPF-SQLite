@@ -13,5 +13,6 @@ namespace EgyptianDictionary_SQLite
     /// </summary>
     public partial class App : Application
     {
+        public static User CurrentUser = null;
     }
 }

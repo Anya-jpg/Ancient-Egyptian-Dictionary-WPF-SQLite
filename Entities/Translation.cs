@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EgyptianDictionary.Entities
+namespace EgyptianDictionary_SQLite
 {
     using System;
     using System.Collections.Generic;
@@ -22,8 +22,7 @@ namespace EgyptianDictionary.Entities
         public string Result { get; set; }
         public string ClientName { get; set; }
         public string TranslatorName { get; set; }
-
-        public virtual Client Client { get; set; }
-        public virtual Translator Translator { get; set; }
+        public Client Client { get; set; }
+        public Translator Translator { get; set; }
     }
 }

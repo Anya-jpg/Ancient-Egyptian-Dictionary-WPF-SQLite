@@ -1,5 +1,4 @@
-﻿using EgyptianDictionary.Entities;
-using EgyptianDictionary_SQLite.Windows;
+﻿using EgyptianDictionary_SQLite.Windows;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;

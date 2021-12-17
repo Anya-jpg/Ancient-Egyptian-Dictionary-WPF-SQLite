@@ -52,39 +52,237 @@
                          Foreground="white" FontSize="14" FontWeight="Bold"
                     Grid.RowSpan="2" Grid.Row="3" Grid.Column="2" Click="BEdit_Click">Редактировать</Button>
             </Grid>
+            
             <Grid Height="40"  Background="#fff2b2">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="15, 0">
-                    <Button Uid="0" Content="A" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="0,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="1" Content="B" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="2" Content="C" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="3" Content="D" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="4" Content="E" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="5" Content="F" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="6" Content="G" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="7" Content="H" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="8" Content="I" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="9" Content="K" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="10" Content="L" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="11" Content="M" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="12" Content="N" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="13" Content="NU" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="14" Content="NL" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="15" Content="O" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="16" Content="P" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="17" Content="Q" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click " BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="18" Content="R" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="19" Content="S" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="20" Content="T" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="21" Content="U" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="22" Content="V" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="23" Content="W" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="24" Content="X" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="25" Content="Y" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="26" Content="Z" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
-                    <Button Uid="27" Content="Aa" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b"/>
+                    <Button Uid="0" Content="A" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="0,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Мужчина и его занятия"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="1" Content="B" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Женщина и её занятия"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="2" Content="C" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Антропоморфные божества"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="3" Content="D" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Части тела человека"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="4" Content="E" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Млекопитающие"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="5" Content="F" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Части тела млекопитающих"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="6" Content="G" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Птицы"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="7" Content="H" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Части тела птиц"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="8" Content="I" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Амфибии и пресмыкающиеся"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="9" Content="K" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Амфибии и пресмыкающиеся"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="10" Content="L" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Беспозвоночные"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="11" Content="M" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Деревья и растения"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="12" Content="N" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Небо, земля, вода"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="13" Content="NU" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Верхний Нил"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="14" Content="NL" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Нижний Нил"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="15" Content="O" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Здания и их части"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="16" Content="P" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Суда и части судов"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="17" Content="Q" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click " BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Домашняя и походная утварь"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="18" Content="R" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Храмовая утварь и священные эмблемы"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="19" Content="S" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Короны, одежда, посохи и т.п."
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="20" Content="T" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Оружие — военное, охотничье и т.п."
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="21" Content="U" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Орудия земледелия и разных ремёсел"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="22" Content="V" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Корзины, мешки, изделия из верёвок и т.п."
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="23" Content="W" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Сосуды — каменные и глиняные"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="24" Content="X" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Хлеб разных видов"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="25" Content="Y" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Принадлежности письма и игры, музыкальные инструменты"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="26" Content="Z" Height="25" Width="32" Background="{x:Null}" Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Разные линии и геометрические фигуры"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Uid="27" Content="Aa" Height="25" Width="32" Background="{x:Null}"  Foreground="black" Click="Button_Click" BorderThickness="1,0,0,0" BorderBrush="#e8c27b">
+                        <Button.ToolTip>
+                            <ToolTip
+                                Content="Не поддающиеся классификации"
+                                Style="{StaticResource tt_style}">
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
                 </StackPanel>
                 <Grid x:Name="GridCursor" Width="32" Height="5"  VerticalAlignment="Bottom" Background="#28666e" HorizontalAlignment="Left" Margin="15, 0, 0, 0"/>
             </Grid>
+            <TextBlock x:Name="TBCategoria" FontSize="16" Margin="5" HorizontalAlignment="Center" >Категория A: Мужчина и его занятия</TextBlock>
             <Grid Height="20" Margin="8,5,0,0" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition  Width="62"></ColumnDefinition>
@@ -110,7 +308,7 @@
                 <TextBox Grid.Column="6"  TextAlignment="Center" Text="Заметки" Background="#28666e" Foreground="white" IsReadOnly="True"
                               BorderThickness="0,1,1,1" BorderBrush="white"></TextBox>
             </Grid>
-            <ListView Name="LViewDictionary" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="550" Background="Transparent"  BorderThickness="0,0,0,0">
+            <ListView Name="LViewDictionary" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="525" Background="Transparent"  BorderThickness="0,0,0,0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Border BorderBrush="#e8c27b" BorderThickness="1" CornerRadius="8, 8, 3, 3">

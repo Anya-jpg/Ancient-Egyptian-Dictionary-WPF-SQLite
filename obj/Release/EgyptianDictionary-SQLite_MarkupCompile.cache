@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\anya7\source\repos\EgyptianDictionary-SQLite\obj\Release\
+C:\Users\anya7\Documents\GitHub\Ancient-Egyptian-Dictionary-WPF-SQLite\obj\Release\
 EgyptianDictionary_SQLite
 none
 false
 TRACE
-C:\Users\anya7\source\repos\EgyptianDictionary-SQLite\App.xaml
-61663344145
+C:\Users\anya7\Documents\GitHub\Ancient-Egyptian-Dictionary-WPF-SQLite\App.xaml
+14-1481461972
 
-22-577683695
-19171553591
-MainWindow.xaml;Pages\DictionaryPage.xaml;Pages\GodsPage.xaml;Pages\PharaonPage.xaml;Pages\AlphabetPage.xaml;PhoneWindow.xaml;
+29-1054517659
+19750470550
+Pages\ProfileClientPage.xaml;Pages\ProfileTranslatorPage.xaml;Windows\DictionaryWindow.xaml;Windows\GodsWindow.xaml;Windows\LoginWindow.xaml;Windows\MainWindow.xaml;Pages\DictionaryPage.xaml;Pages\GodsPage.xaml;Pages\PharaonPage.xaml;Pages\AlphabetPage.xaml;Windows\PharaohWindow.xaml;Windows\PhonogramWindow.xaml;Windows\RegistrationWindow.xaml;Windows\TranslationWindow.xaml;
 
 False
 

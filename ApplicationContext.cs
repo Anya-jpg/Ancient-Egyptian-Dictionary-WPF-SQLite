@@ -11,7 +11,11 @@ namespace EgyptianDictionary_SQLite
         public DbSet<Dictionary> Dictionaries { get; set; }
         public DbSet<Pharaoh> Pharaohs { get; set; }
         public DbSet<Phonogram> Phonograms { get; set; }
-        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Translator> Translators { get; set; }
+        public DbSet<Translation> Translations { get; set; }
 
     }
 }

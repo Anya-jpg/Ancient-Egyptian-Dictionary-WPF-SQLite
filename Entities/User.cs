@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EgyptianDictionary.Entities
+namespace EgyptianDictionary_SQLite
 {
     using System;
     using System.Collections.Generic;
@@ -15,13 +15,7 @@ namespace EgyptianDictionary.Entities
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
-        {
-            this.Client = new HashSet<Client>();
-            this.Translator = new HashSet<Translator>();
-        }
-    
-        public string Login { get; set; }
+        public string Id { get; set; }
         public string Password { get; set; }
         public byte RoleId { get; set; }
     
